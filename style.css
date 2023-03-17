@@ -1,0 +1,105 @@
+* {
+  background-color: #191b28;
+}
+
+/* custom font */
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("digital-7.regular.ttf");
+}
+
+.container {
+  margin: auto;
+  margin-top: 35px;
+  width: 300px;
+  height: 455px;
+  border: 3px solid black;
+  border-radius: 10px;
+  /* background-color: white; */
+}
+
+/* display area */
+.display {
+  margin: 5px;
+  height: 70px;
+  border: 2px solid gray;
+  text-align: center;
+  font-size: xx-large;
+  font-family: digital-clock-font;
+  background-color: lightslategrey;
+}
+
+p {
+  background-color: inherit;
+}
+
+/* buttons container */
+.grid-container {
+  margin: 5px 5px 0 5px;
+  height: 355px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  display: grid;
+  text-align: center;
+  padding: 6px 5px 0 5px;
+  background-color: white;
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: white;
+}
+
+button {
+  padding: 20px;
+  font-weight: bolder;
+  box-shadow: 0 4px #999;
+  border: 2px solid burlywood;
+  background-color: white;
+}
+
+button:hover {
+  background-color: lavender;
+}
+
+button:active {
+  box-shadow: 0 4px #666;
+  transform: translateY(2px);
+}
+
+/* x^2 */
+sup {
+  background-color: white;
+}
+
+#caption {
+  text-align: center;
+  color: blueviolet;
+}
+
+span {
+  color: red;
+}
+
+/* special buttons i.e., C and = */
+#spcl {
+  background-color: lightgoldenrodyellow;
+}
+
+/* welcome message animation */
+.display p {
+    /* margin:0px; */
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 4s steps(21, end) forwards, blink 1s infinite;
+  }
+  @keyframes typing {
+    0% { width:0% }
+    100% { width:100% }
+  }
